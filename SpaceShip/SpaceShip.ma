@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: SpaceShip.ma
-//Last modified: Wed, Mar 27, 2024 05:25:21 PM
+//Last modified: Wed, Mar 27, 2024 05:34:44 PM
 //Codeset: 1252
 requires maya "2024";
 currentUnit -l centimeter -a degree -t film;
@@ -9,23 +9,23 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "BF76F0FE-44D1-2EDB-4BDE-9486287D3C66";
+fileInfo "UUID" "15AC0D79-43E5-3145-6373-A8BC218B027E";
 createNode transform -s -n "persp";
 	rename -uid "C4654865-4DA0-5C74-3574-5CA616F24598";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 21.025312149209551 19.145198626236365 20.483336630913417 ;
-	setAttr ".r" -type "double3" 152.81578013131315 -225.32340970696228 179.99999999999707 ;
-	setAttr ".rp" -type "double3" 1.1368683772161603e-13 6.9722005946459831e-14 0 ;
-	setAttr ".rpt" -type "double3" -2.2315622747016951e-13 -6.5015947787414607e-15 2.0679132612705834e-14 ;
+	setAttr ".t" -type "double3" 5.0987223588238733 8.0245066285792568 23.475778956941596 ;
+	setAttr ".r" -type "double3" -5.1872644768119285 0.52067034675983126 1.3667010211087382e-16 ;
+	setAttr ".rp" -type "double3" 0 -8.8817841970012523e-16 -1.4210854715202004e-14 ;
+	setAttr ".rpt" -type "double3" -2.2622304180690221e-13 -2.0883943877232987e-14 1.7322929563181127e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A578E72C-4B35-636A-F9E4-029826336E19";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 32.750235075996457;
+	setAttr ".coi" 23.573292275598384;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.30942136353686589 4.1831570892743066 1.3322676295501878e-15 ;
+	setAttr ".tp" -type "double3" 4.8853824138641357 5.893216609954834 0 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "87A9DF18-48BB-43F2-0481-A7B7030EDF1C";
@@ -831,13 +831,13 @@ createNode mesh -n "loftedSurface8Shape" -p "loftedSurface8";
 	setAttr -s 2 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.47500000894069672 0.9166666567325592 ;
+	setAttr ".pv" -type "double2" 0.5 0.6666666716337204 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 55 ".pt";
+	setAttr -s 56 ".pt";
 	setAttr ".pt[2]" -type "float3" 0 -0.0054793297 0 ;
 	setAttr ".pt[3]" -type "float3" 0.12884834 -0.1092765 0.013784063 ;
 	setAttr ".pt[5]" -type "float3" 1.8626451e-09 0.070331119 0.10549378 ;
